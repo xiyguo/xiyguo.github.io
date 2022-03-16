@@ -193,6 +193,134 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/16/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/profile.jpg">
+      <meta itemprop="name" content="Xiy-G">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CHAOS">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/16/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/" class="post-title-link" itemprop="url">云计算第二次作业（基本云安全）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-16 16:26:22 / 修改时间：17:09:16" itemprop="dateCreated datePublished" datetime="2022-03-16T16:26:22+08:00">2022-03-16</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/03/16/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/16/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="云计算第二次作业"><a href="#云计算第二次作业" class="headerlink" title="云计算第二次作业"></a>云计算第二次作业</h1><h4 id="2-1、列举威胁作用者有哪些，并简要说明。"><a href="#2-1、列举威胁作用者有哪些，并简要说明。" class="headerlink" title="2-1、列举威胁作用者有哪些，并简要说明。"></a>2-1、列举威胁作用者有哪些，并简要说明。</h4><ul>
+<li><p>匿名攻击者(anonymous attacker)：是云中没有权限、不被信任的云服务用户。通常是外部软件程序，通过公网发动网络攻击；往往诉诸绕过用户账号或窃取用户证书的手段，同时使用能确保匿名性或需要大量资源才能被检举的方法；</p>
+<blockquote>
+<p>没有任何权限，通过病毒攻击；</p>
+</blockquote>
+</li>
+<li><p>恶意服务作用者(malicious service agent)：能截取并转发云内的网络流量。它通常是带有被损害的或恶意逻辑的服务代理（或伪装成服务代理的程序）。</p>
+<blockquote>
+<p>服务代理 转发流量；</p>
+</blockquote>
+</li>
+<li><p>授信的攻击者(trusted attacker)：又称恶意租户(malicious tenant)，与同一云环境中的云用户共享IT资源，试图利用合法的证书来把云提供者、以及与他们共享IT资源的云租户作为攻击目标。</p>
+<blockquote>
+<p>自己用了云服务，通过权限攻击提供者和其他云用户；</p>
+</blockquote>
+</li>
+<li><p>恶意的内部人员(malicious insider)：是人为的威胁作用者，他们的行为代表云提供者，或者与之有关。</p>
+<blockquote>
+<p>有提供者等同权限的人 发起的；</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="2-2、列举云安全威胁有哪些，并简要说明。"><a href="#2-2、列举云安全威胁有哪些，并简要说明。" class="headerlink" title="2-2、列举云安全威胁有哪些，并简要说明。"></a>2-2、列举云安全威胁有哪些，并简要说明。</h4><ul>
+<li><p>流量窃听(traffic eavesdropping)：指当数据在传输到云中或在云内部传输时（通常是从云用户到云提供者），被恶意的服务作用者被动地截获，用于非法的信息收集。</p>
+<blockquote>
+<p>从中获取云用户到云提供者的消息</p>
+</blockquote>
+</li>
+<li><p>恶意媒介(malicious intermediate)：是指消息被恶意服务作用者截获并篡改，因此可能会破坏消息的保密性和完整性。</p>
+<blockquote>
+<p>从中拦截消息，并篡改</p>
+</blockquote>
+</li>
+<li><p>拒绝服务(DoS)：攻击的目标是使IT资源过载至无法正确运行，发起形式包括：</p>
+<ul>
+<li>云服务上的负载由于伪造的消息或重复的通信请求不正常的增加。</li>
+<li>网络流量过载，降低了响应性，性能下降。</li>
+<li>发出多个云服务请求，每个请求都设计成消耗过量的内存和处理资源。</li>
+</ul>
+<blockquote>
+<p>发很多消息或者流量，让服务器崩溃，无法接受用户消息；</p>
+</blockquote>
+</li>
+<li><p>授权不足：是指错误的授予了攻击者访问权限，或是授权太宽泛，导致攻击者能够访问本应该受到保护的IT资源。</p>
+<blockquote>
+<p>授权不合理，坏人得到了他不该得到的权限</p>
+</blockquote>
+</li>
+<li><p>虚拟化攻击(Virtualization attack)：利用虚拟化平台的漏洞来危害虚拟化平台的保密性、完整性和可用性。</p>
+</li>
+<li><p>信任边界重叠：如果云中的物理IT资源是由不同的云服务共享的，那么这些云服务用户的信任边界是重叠的。恶意的云服务用户可以把目标设定为共享的IT资源，意图损害其他共享同样信任边界的云服务用户或IT资源。</p>
+<blockquote>
+<p>共享资源存在信任边界重叠，共享资源被篡改</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/10/%E4%BA%91%E8%AE%A1%E7%AE%97%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -427,7 +555,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
